@@ -58,6 +58,10 @@ h2 {
   margin: 0px;
 }
 
+.front { 
+  z-index: 999;
+}
+
 .footer {
   position: absolute;
   width: 10%;
@@ -94,6 +98,7 @@ h2 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
+  z-index: 999;
 }
 
 

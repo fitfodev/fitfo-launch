@@ -34,6 +34,7 @@ class Home extends React.Component {
     return (
       
     <div >
+      <div className='front'>
       <div className='vertical-center'>
         <center>
           <InputGroup className="mb-3">
@@ -48,7 +49,7 @@ class Home extends React.Component {
           </ToggleButton>
         </center>
       </div>
-
+      </div>
       <img src={icon} className='footer' alt='footer'></img>   
         <div id="foglayer_01" class="fog">
           <div class="image01"></div>
@@ -62,6 +63,7 @@ class Home extends React.Component {
         <div id="foglayer_04" class="fog">
           <div class="image01"></div>
         </div>
+        
        
       
     </div>)
