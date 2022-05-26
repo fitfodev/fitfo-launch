@@ -34,19 +34,6 @@ class Home extends React.Component {
     return (
       
     <div >
-        <div id="foglayer_01" class="fog">
-          <div class="image01"></div>
-        </div>
-        <div id="foglayer_02" class="fog">
-          <div class="image01"></div>
-        </div>
-        <div id="foglayer_03" class="fog">
-          <div class="image01"></div>
-        </div>
-        <div id="foglayer_04" class="fog">
-          <div class="image01"></div>
-        </div>
-       
       <div className='vertical-center'>
         <center>
           <InputGroup className="mb-3">
@@ -63,6 +50,20 @@ class Home extends React.Component {
       </div>
 
       <img src={icon} className='footer' alt='footer'></img>   
+        <div id="foglayer_01" class="fog">
+          <div class="image01"></div>
+        </div>
+        <div id="foglayer_02" class="fog">
+          <div class="image01"></div>
+        </div>
+        <div id="foglayer_03" class="fog">
+          <div class="image01"></div>
+        </div>
+        <div id="foglayer_04" class="fog">
+          <div class="image01"></div>
+        </div>
+       
+      
     </div>)
     
     
