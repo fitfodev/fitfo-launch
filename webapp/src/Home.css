@@ -13,6 +13,25 @@
 }
 
 * {
+  color: white;
+}
+
+.fadeOutDiv{
+  opacity:0;
+  width:0;
+  height:0;
+  transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+
+}
+.fadeInDiv{
+  opacity:1;
+  width:100px;
+  height:100px;
+  transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+
+}
+
+* {
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
@@ -22,6 +41,36 @@ background-repeat: no-repeat;
 background-attachment: scroll;
 overflow: hidden;
 
+}
+
+#wrapper {
+
+  overflow: scroll;
+
+}
+
+.container {
+  display: inline-block;
+  width: 60%;
+ 
+}
+
+.divdiv {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 1rem;
+
+}
+
+.leftDiv {
+  float: left;
+  width: 100%;
+}
+
+.rightDiv {
+
+  width: 100%;
 }
 
 .pageContainer {
@@ -42,6 +91,12 @@ overflow: hidden;
   width: 30%;
 }
 
+.square {
+  margin-top: .5em;
+  width: 70%;
+  margin-bottom: .5em;
+}
+
 
 h1 {
   font-size: 4em;
@@ -54,12 +109,17 @@ p {
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 1.5em;
   margin: 0px;
+  font-weight: bold;
 }
 
 .front { 
   z-index: 999;
+}
+
+.invitationFooter {
+  width: 10%;
 }
 
 .footer {
@@ -69,17 +129,46 @@ h2 {
   left: 50%;
   margin-bottom: 1.5em;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
+  transform: translateX(-50%);
+  opacity: .7;
 }
 
-.btn-primary {
+label {
+  color: transparent;
+}
+
+.form-control:focus{
+  border-color: white;
+  box-shadow: 0 0 0 0.1rem white;
+}
+
+.btn-light:hover {
+  color: white;
+  border-color: white;
+  background-color: transparent;
+  box-shadow: 0 0 0 0.1rem white;
+}
+
+.btn-light:active {
+  border-color: white;
+  background-color: transparent;
+  box-shadow: 0 0 0 0.1rem white;
+}
+
+.btn-light:focus {
+  border-color: white;
+  box-shadow: 0 0 0 0.1rem white;
+}
+
+
+.btn-light {
   color: white;
   border-color: white;
   background-color: rgba(255,255,255,0.2);
 }
 
 .form-control {
-  width: 30% !important;
+  width: 20% !important;
 }
 
 .input-group > .form-control, .input-group > .form-select {
@@ -88,6 +177,7 @@ h2 {
   margin: 0 auto;
   background-color: rgba(255,255,255,0.2);
   color: white;
+  text-align: center
   
 }
 
@@ -101,9 +191,23 @@ h2 {
   z-index: 999;
 }
 
+.invitation {
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  height: 100%;
+  overflow-y: scroll;
+  z-index: -1;
+}
+
+#finalFantasy {
+  z-index: 999;
+  pointer-events: none;
+}
 
 
-@media only screen and (min-width: 0px) and (max-width: 700px)
+
+@media only screen and (min-width: 0px) and (max-width: 900px)
 {
 
 
@@ -126,6 +230,10 @@ h2 {
   .logo {
     width: 50%;
   }
+
+  .square {
+    width: 60%;
+  }
   
   h1 {
     font-size: 2em;
@@ -136,7 +244,11 @@ h2 {
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 1.25em;
+  }
+
+  .invitationFooter {
+    width: 30%;
   }
 
   .footer {
@@ -148,6 +260,19 @@ h2 {
     margin-bottom: 1.5em;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
+  }
+
+  .container {
+    display: inline-block;
+    width: 100%;
+   
+  }
+  
+  .divdiv {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 1rem;
   }
 
 
@@ -362,23 +487,16 @@ body {
     }
   }
 
-
-
-  /*.scrolling-image {
-    background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog2.png") repeat-x;
-    height: 1000px;
-    width: 1224px;
-    animation: slide 3s linear infinite;
+  .error
+  {
+    width: inherit;
+    animation: shake 0.2s ease-in-out 0s 2;
+    
   }
 
-  @media screen and (orientation: portrait) {
-    #foglayer_01 .image01, #foglayer_01 .image02 {
-      transform: rotate(90deg);
-      height: 100vh;
-    }
-    #foglayer_02 .image01, #foglayer_02 .image02,
-    #foglayer_03 .image01, #foglayer_03 .image02{
-      transform: rotate(90deg);
-      height: 100vh;
-    }
-  }*/
+@keyframes shake {
+0% { margin-left: 0rem; }
+25% { margin-left: 0.5rem; }
+75% { margin-left: -0.5rem; }
+100% { margin-left: 0rem; }
+}
