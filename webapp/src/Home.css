@@ -21,8 +21,11 @@
 }
 
 .customBtn {
-  width: 15%;
+  position: relative;
+  width: 25%;
+  font-size: 1.2em;
   font-weight: bold;
+  z-index: -1;
 }
 
 .fadeOutDiv{
@@ -60,16 +63,23 @@ overflow: hidden;
 
 .container {
   display: inline-block;
-  width: 50%;
+  width: 80%;
  
 }
 
 .divdiv {
   display: inline-block;
   vertical-align: top;
-  width: 50%;
+  width: 40%;
   padding: 1rem;
 
+}
+
+.divdiv2 {
+  display: inline-block;
+
+  width: 50%;
+  padding: 0rem;
 }
 
 .leftDiv {
@@ -139,8 +149,8 @@ h3 {
 
 .footer {
   position: absolute;
-  width: 10%;
-  bottom: 0px; 
+  width: 7%;
+  bottom: .5em; 
   left: 50%;
   margin-bottom: 1.5em;
   -webkit-transform: translateX(-50%);
@@ -206,6 +216,28 @@ label {
   z-index: 999;
 }
 
+.verticalrules-center {
+  margin: 0;
+  margin-top: 10em;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 999;
+}
+
+.verticalish-center {
+  margin: 0;
+  margin-top: 1.5em;
+  position: absolute;
+  top: 45%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 999;
+}
+
 .invitation {
   margin: 0;
   position: absolute;
@@ -225,6 +257,25 @@ label {
 @media only screen and (min-width: 0px) and (max-width: 900px)
 {
 
+  .verticalrules-center {
+    margin: 0;
+    margin-top: 4em;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 999;
+  }
+
+  .firstLine {
+    font-size: 1em;
+  }
+
+  .secondLine {
+    font-size: 1em;
+  }
+
   h3 {
     font-weight: bold;
     margin-top: .8em;
@@ -232,7 +283,8 @@ label {
   }
 
   .customBtn {
-    width: 25%;
+    width: 20%;
+    font-size: .8em !important;
   }
 
 
@@ -257,7 +309,7 @@ label {
   }
 
   .square {
-    width: 40%;
+    width: 50%;
   }
   
   h1 {
@@ -279,7 +331,7 @@ label {
   .footer {
     position: absolute;
     opacity: .5;
-    width: 30%;
+    width: 20%;
     bottom: 0px; 
     left: 50%;
     margin-bottom: 1.5em;
