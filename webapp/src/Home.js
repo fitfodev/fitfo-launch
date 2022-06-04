@@ -86,14 +86,15 @@ class Home extends React.Component {
                     }
                   }}/>
               </InputGroup>
-              <ToggleButton variant="light" type="submit" onClick={this.checkPassword}>
+              <ToggleButton variant="light" type="submit" className="boldBtn" onClick={this.checkPassword}>
                 submit
               </ToggleButton>
             </div>
           </center>
         </div>
-        <img src={icon} className='footer' alt='footer' ></img>   
+        
       </div>
+      <img src={icon} className='footer' alt='footer' ></img>   
 
       <div className='front' style={{visibility: this.state.rightPassword === true ? 'visible' : 'hidden', opacity: this.state.rightPassword === true ? '1':'0', transition: this.state.rightPassword === true ? 'none':'visibility 0s 1s, opacity 1s linear' }}>
         <div id='wrapper'>
@@ -117,35 +118,18 @@ class Home extends React.Component {
                 </div>
                 <div className='divdiv'>
                   <h2 style={{marginTop: '.5em'}}>RULES</h2>
-                  <h2>
-                    <br></br>
-                    NO ENTEROUGES
-                    <br></br>
-                    <br></br>
-                    BRING A STICKER
-                    <br></br>
-                    <br></br>
-                    ANOTHER RULE
-                    <br></br>
-                    <br></br>
-                    BE GENUINE
-                    <br></br>
-                    <br></br>
-                    NETWORK
-                    <br></br>
-                    <br></br>
-                    ENSURE FUNNESS
-                    <br></br>
-                    <br></br>
-                    NUMBER SEVEN
-                    <br></br>
-                    <br></br>
-                  </h2>
+                  <h3>NO ENTEROUGES</h3>
+                  <h3>BRING A STICKER</h3>
+                  <h3>ANOTHER RULE</h3>
+                  <h3>BE GENUINE</h3>
+                  <h3>NETWORK</h3>
+                  <h3>ENSURE FUNNESS</h3>
+                  <h3>NUMBER SEVEN</h3>
                 </div>
-                <img src={icon} className='footer' alt='footer' ></img>   
-                <ToggleButton variant="light" type="submit" onClick={this.checkPassword}>
+                <ToggleButton variant="light" type="submit" className='customBtn' onClick={this.checkPassword}>
                     RSVP
                   </ToggleButton>
+                  
               </div>
               </b>
             </div>

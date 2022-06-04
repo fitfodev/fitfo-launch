@@ -16,6 +16,15 @@
   color: white;
 }
 
+.boldBtn {
+  font-weight: bold;
+}
+
+.customBtn {
+  width: 15%;
+  font-weight: bold;
+}
+
 .fadeOutDiv{
   opacity:0;
   width:0;
@@ -51,7 +60,7 @@ overflow: hidden;
 
 .container {
   display: inline-block;
-  width: 60%;
+  width: 50%;
  
 }
 
@@ -112,6 +121,12 @@ h2 {
   font-size: 1.5em;
   margin: 0px;
   font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+  margin-top: .8em;
+  font-size: 1.3em;
 }
 
 .front { 
@@ -210,6 +225,16 @@ label {
 @media only screen and (min-width: 0px) and (max-width: 900px)
 {
 
+  h3 {
+    font-weight: bold;
+    margin-top: .8em;
+    font-size: .8em;
+  }
+
+  .customBtn {
+    width: 25%;
+  }
+
 
   .form-control {
     width: 50% !important;
@@ -232,7 +257,7 @@ label {
   }
 
   .square {
-    width: 60%;
+    width: 40%;
   }
   
   h1 {
@@ -272,7 +297,7 @@ label {
     display: inline-block;
     vertical-align: top;
     width: 100%;
-    padding: 1rem;
+    padding: 0;
   }
 
 
